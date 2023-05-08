@@ -1,0 +1,42 @@
+@charset "utf-8";
+@use "../base/mixins" as *;
+
+/** @section General layout */
+
+body {
+    font-family: var(--font);
+    background: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    margin: var(--outer-margin);
+}
+footer {
+    margin-top: auto;
+}
+.attribution {
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+    padding: 3.2rem;
+    a {
+        color: inherit;
+    }
+}
+@include css-media-queries ($from-breakpoint: wide) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        --outer-margin: auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        margin-top: auto;
+    }
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+// Variables
+:root {
+    // Font
+    --font: Overpass, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+    // Colours
+    --primary-colour: hsl(25, 97%, 53%);
+    --neutral-primary-colour: white;
+    --neutral-secondary-colour: hsl(217, 12%, 63%);
+    --primary-background: hsl(216, 12%, 8%);
+    --secondary-background: hsl(213, 19%, 18%);
+    --tertiary-background: hsl(216, 12%, 54%, .2);
+
+    // Font sizes
+    --text-size: 1.5rem;
+    --title-size: 2.2rem;
+
+    // Margins, paddings and rounded corners
+    --outer-margin: 15.4rem 2.4rem;
+    --card-padding: 8.6rem 2.4rem 3.2rem;
+    --card-corner: 1rem;
+    --rate-corner: 50%;
+    --button-corner: 2.2rem;
+
+    // Transitions
+    --transition-hover: all 250ms ease-in;
+}
